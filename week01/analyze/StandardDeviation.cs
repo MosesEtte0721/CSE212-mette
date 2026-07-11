@@ -54,6 +54,7 @@ public static class StandardDeviation {
         var count = numbers.Length;
         var avg = (double)numbers.Sum() / count;
         var sumSquaredDifferences = 0.0;
+        
         foreach (var number in numbers) {
             sumSquaredDifferences += Math.Pow(number - avg, 2);
         }

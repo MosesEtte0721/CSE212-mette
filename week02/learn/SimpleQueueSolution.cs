@@ -1,7 +1,6 @@
 ﻿public class SimpleQueueSolution {
     public static void Run() {
         // Test Cases
-
         // Test 1
         // Scenario: Enqueue one value and then Dequeue it.
         // Expected Result: It should display 100

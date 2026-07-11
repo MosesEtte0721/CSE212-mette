@@ -8,8 +8,13 @@
         Console.WriteLine("Test 1");
         var queue = new SimpleQueue();
         queue.Enqueue(100);
+        queue.Enqueue(50);
+        queue.Enqueue(400);
         var value = queue.Dequeue();
+        var value1 = queue.Dequeue();
+        Console.WriteLine(value1);
         Console.WriteLine(value);
+        
         // Defect(s) Found:
 
         Console.WriteLine("------------");
@@ -66,8 +71,8 @@
         if (_queue.Count <= 0)
             throw new IndexOutOfRangeException();
 
-        var value = _queue[1];
-        _queue.RemoveAt(1);
+        var value = _queue[0];
+        _queue.RemoveAt(0);
         return value;
     }
 }
